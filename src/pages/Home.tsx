@@ -127,7 +127,7 @@ const CTASection = () => (
             <a href="https://wa.me/37378675575?text=Bună, aș dori catalogul JucaBox Baby." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[hsl(142,70%,40%)] text-primary-foreground px-5 py-3 rounded-full font-heading font-bold text-sm hover:opacity-90 transition-opacity">
               WhatsApp
             </a>
-            <a href="viber://chat?number=37378675575&text=Bună, aș dori catalogul JucaBox Baby." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[hsl(270,60%,55%)] text-primary-foreground px-5 py-3 rounded-full font-heading font-bold text-sm hover:opacity-90 transition-opacity">
+            <a href={`viber://chat?number=37378675575&draft=${encodeURIComponent("Bună, aș dori catalogul JucaBox Baby.")}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[hsl(270,60%,55%)] text-primary-foreground px-5 py-3 rounded-full font-heading font-bold text-sm hover:opacity-90 transition-opacity">
               Viber
             </a>
             <a href="https://t.me/+37378675575?text=Bună, aș dori catalogul JucaBox Baby." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[hsl(200,80%,50%)] text-primary-foreground px-5 py-3 rounded-full font-heading font-bold text-sm hover:opacity-90 transition-opacity">
