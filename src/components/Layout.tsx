@@ -3,18 +3,34 @@ import logo from "@/assets/logo.jpg";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
-const navLinks = [
+/** Meniu sus: anchor links + pagini */
+const navLinksTop = [
   { to: "/", label: "Acasă" },
+  { to: "/#ce-este-jucabox", label: "Ce este JucaBox" },
+  { to: "/pachete", label: "Pachete & Abonamente" },
+  { to: "/#cum-functioneaza", label: "Cum funcționează" },
+  { to: "/exemple", label: "Exemple de jucării" },
+  { to: "/#igienizare", label: "Igienizare & siguranță" },
+  { to: "/#recenzii", label: "Recenzii" },
+  { to: "/#contact", label: "Contact" },
+];
+
+/** Navigare jos (footer) */
+const navLinksFooter = [
+  { to: "/", label: "Acasă" },
+  { to: "/#ce-este-jucabox", label: "Ce este JucaBox Baby" },
   { to: "/pachete", label: "Pachete & Abonamente" },
   { to: "/selectie", label: "Selecție personalizată" },
-  { to: "/exemple", label: "Exemple jucării" },
-  { to: "/igienizare", label: "Igienizare" },
-  { to: "/recenzii", label: "Recenzii" },
+  { to: "/exemple", label: "Exemple de jucării" },
+  { to: "/#igienizare", label: "Igienizare" },
+  { to: "/#recenzii", label: "Recenzii" },
+  { to: "/termeni", label: "Termeni și responsabilități" },
 ];
 
 const Navbar = () => {
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
+  const current = location.pathname + (location.hash || "");
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-card/80 backdrop-blur-md border-b">
@@ -24,11 +40,11 @@ const Navbar = () => {
           <span className="font-heading font-extrabold text-xl text-foreground">JucaBox Baby</span>
         </Link>
         <div className="hidden lg:flex items-center gap-6 font-body font-semibold text-sm">
-          {navLinks.map((link) => (
+          {navLinksTop.map((link) => (
             <Link
               key={link.to}
               to={link.to}
-              className={`transition-colors ${location.pathname === link.to ? "text-primary" : "text-muted-foreground hover:text-primary"}`}
+              className={`transition-colors ${current === link.to ? "text-primary" : "text-muted-foreground hover:text-primary"}`}
             >
               {link.label}
             </Link>
@@ -48,12 +64,12 @@ const Navbar = () => {
       </div>
       {menuOpen && (
         <div className="lg:hidden bg-card border-t px-4 py-4 flex flex-col gap-3 font-body font-semibold text-sm">
-          {navLinks.map((link) => (
+          {navLinksTop.map((link) => (
             <Link
               key={link.to}
               to={link.to}
               onClick={() => setMenuOpen(false)}
-              className={`py-2 ${location.pathname === link.to ? "text-primary" : "text-muted-foreground"}`}
+              className={`py-2 ${current === link.to ? "text-primary" : "text-muted-foreground"}`}
             >
               {link.label}
             </Link>
@@ -68,7 +84,7 @@ const Navbar = () => {
 };
 
 const Footer = () => (
-  <footer className="py-16 border-t bg-card">
+  <footer id="contact" className="w-full min-w-0 py-12 border-t bg-card">
     <div className="container mx-auto px-4">
       <div className="grid md:grid-cols-3 gap-12 max-w-4xl mx-auto">
         <div>
@@ -76,7 +92,7 @@ const Footer = () => (
             <img src={logo} alt="JucaBox Baby" className="h-10 w-10 rounded-full" />
             <span className="font-heading font-extrabold text-lg text-foreground">JucaBox Baby</span>
           </div>
-          <p className="text-muted-foreground text-sm">Jucării educative, cu rotație lunară, adaptate vârstei copilului tău.</p>
+          <p className="text-muted-foreground text-sm">Jucării educative, cu rotație lunară, adaptate vârstei și etapei de dezvoltare a copilului tău.</p>
         </div>
         <div>
           <h4 className="font-heading font-bold mb-4 text-foreground">Contact</h4>
@@ -85,9 +101,9 @@ const Footer = () => (
           <p className="text-muted-foreground text-sm">Administrator: Rotaru-Cojocari Diana</p>
         </div>
         <div>
-          <h4 className="font-heading font-bold mb-4 text-foreground">Navigare</h4>
+          <h4 className="font-heading font-bold mb-4 text-foreground italic">Navigare</h4>
           <div className="flex flex-col gap-2">
-            {navLinks.map((link) => (
+            {navLinksFooter.map((link) => (
               <Link key={link.to} to={link.to} className="text-muted-foreground text-sm hover:text-primary transition-colors">
                 {link.label}
               </Link>
@@ -107,9 +123,9 @@ interface LayoutProps {
 }
 
 const Layout = ({ children }: LayoutProps) => (
-  <div className="min-h-screen bg-background">
+  <div className="min-h-screen w-full min-w-0 bg-background overflow-x-hidden max-w-[100vw]">
     <Navbar />
-    <main className="pt-20">{children}</main>
+    <main className="w-full min-w-0 pt-[4.5rem] overflow-x-hidden">{children}</main>
     <Footer />
   </div>
 );

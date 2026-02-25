@@ -2,7 +2,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import Layout from "@/components/Layout";
 import Home from "./pages/Home";
 import Packages from "./pages/Packages";
@@ -10,9 +11,25 @@ import Selection from "./pages/Selection";
 import Examples from "./pages/Examples";
 import Hygiene from "./pages/Hygiene";
 import Reviews from "./pages/Reviews";
+import Termeni from "./pages/Termeni";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
+
+const ScrollToTop = () => {
+  const { pathname, hash } = useLocation();
+  useEffect(() => {
+    if (hash) {
+      const id = hash.slice(1);
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: "auto", block: "start" });
+      else window.scrollTo(0, 0);
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [pathname, hash]);
+  return null;
+};
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -20,6 +37,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter basename="/toy-subscription-box">
+        <ScrollToTop />
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -28,6 +46,7 @@ const App = () => (
             <Route path="/exemple" element={<Examples />} />
             <Route path="/igienizare" element={<Hygiene />} />
             <Route path="/recenzii" element={<Reviews />} />
+            <Route path="/termeni" element={<Termeni />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>

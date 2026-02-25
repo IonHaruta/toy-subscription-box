@@ -90,11 +90,35 @@
     @apply border-border;
   }
 
+  html {
+    overflow-x: hidden;
+    max-width: 100%;
+    width: 100%;
+  }
+
   body {
+    overflow-x: hidden;
+    max-width: 100%;
+    width: 100%;
     @apply bg-background text-foreground font-body;
+  }
+
+  #root {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading;
+  }
+
+  /* Secțiuni țintă pentru anchor links – titlul începe imediat sub navbar, fără bandă goală */
+  #ce-este-jucabox,
+  #cum-functioneaza,
+  #igienizare,
+  #recenzii,
+  #contact {
+    scroll-margin-top: 4.5rem;
   }
 }

@@ -38,7 +38,7 @@ const Examples = () => {
   const [activeAge, setActiveAge] = useState(ageGroups[0]);
 
   return (
-    <section className="py-24">
+    <section className="py-12">
       <div className="container mx-auto px-4">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-8">
           <h1 className="text-3xl md:text-5xl font-heading font-black mb-4 text-foreground">Exemple de jucării</h1>
