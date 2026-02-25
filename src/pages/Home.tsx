@@ -44,7 +44,7 @@ const Hero = () => (
         </span>
         <h1 className="text-4xl md:text-6xl font-heading font-black leading-tight mb-4 text-foreground">
           Jucării educative,<br />
-          <span className="text-primary">prin abonament lunar</span>
+          <span className="text-primary whitespace-nowrap">prin abonament lunar</span>
         </h1>
         <p className="text-lg text-foreground font-medium drop-shadow-sm">
           Adaptate vârstei și etapei de dezvoltare.
