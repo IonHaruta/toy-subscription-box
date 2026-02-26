@@ -39,9 +39,6 @@ const Hero = () => (
         transition={{ duration: 0.8 }}
         className="max-w-xl"
       >
-        <span className="inline-block bg-transparent text-primary font-semibold text-sm px-4 py-1.5 rounded-full mb-6 drop-shadow-sm">
-          🧸 Abonament lunar de jucării educative
-        </span>
         <h1 className="text-4xl md:text-6xl font-heading font-black leading-tight mb-4 text-foreground">
           Jucării educative,<br />
           <span className="text-primary whitespace-nowrap">prin abonament lunar</span>
@@ -87,7 +84,6 @@ const HowItWorks = () => (
     <div className="container mx-auto px-4">
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-10">
         <h2 className="text-3xl md:text-5xl font-heading font-black mb-4 text-foreground">Cum funcționează</h2>
-        <p className="text-muted-foreground text-lg max-w-lg mx-auto">Cum funcționează, pas cu pas:</p>
       </motion.div>
       <div className="grid md:grid-cols-4 gap-8 max-w-4xl mx-auto">
         {steps.map((step, i) => (
@@ -149,7 +145,7 @@ const HygieneSection = () => (
             Igienizare și siguranță
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-            Fiecare jucărie este verificată, curată și igienizată între utilizări, metode adecvate vârstei copiilor și materialelor din care sunt realizate.
+            Fiecare jucărie este verificată, curățată și igienizată între utilizări, metode adecvate vârstei copiilor și materialelor din care sunt realizate.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
             <em>Siguranța și starea jucăriilor sunt o prioritate în fiecare rotație.</em>

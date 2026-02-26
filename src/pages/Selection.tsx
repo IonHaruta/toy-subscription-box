@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const ageGroups = [
-  { range: "0–3 luni", icon: "👶", desc: "Nou-născuți — stimulare senzorială, contrast vizual", formUrl: "https://forms.gle/fw5jhFkeDy8NE4ne8" },
-  { range: "3–12 luni", icon: "🧒", desc: "Explorare — apucare, texturi, cauză-efect", formUrl: "https://forms.gle/ZZxSYeuRcnHhAEB39" },
-  { range: "12–24 luni", icon: "🧸", desc: "Motricitate fină — stivuire, potrivire, sortare", formUrl: "https://forms.gle/LATBFYk6ac5eiidj6" },
-  { range: "24–36 luni", icon: "🎨", desc: "Joc imaginativ — puzzle, joc de rol, construcție", formUrl: "https://forms.gle/3io3nG2QcGHNpKuB7" },
+  { range: "0–3 luni", formUrl: "https://forms.gle/fw5jhFkeDy8NE4ne8" },
+  { range: "3–12 luni", formUrl: "https://forms.gle/ZZxSYeuRcnHhAEB39" },
+  { range: "12–24 luni", formUrl: "https://forms.gle/LATBFYk6ac5eiidj6" },
+  { range: "24–36 luni", formUrl: "https://forms.gle/3io3nG2QcGHNpKuB7" },
 ];
 
 const Selection = () => (
@@ -25,18 +25,16 @@ const Selection = () => (
           <h2 className="font-heading font-bold text-xl mb-6 text-foreground text-center">
             Alege vârsta copilului tău:
           </h2>
-          <div className="grid sm:grid-cols-2 gap-4">
+          <div className="flex flex-col gap-2 max-w-xs mx-auto">
             {ageGroups.map((group) => (
               <a
                 key={group.range}
                 href={group.formUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block rounded-2xl p-6 border-2 border-border bg-card hover:border-primary hover:bg-primary/5 text-left transition-all"
+                className="block rounded-lg py-3 px-4 border border-border bg-card hover:border-primary hover:bg-primary/5 text-center font-heading font-bold text-foreground transition-all"
               >
-                <span className="text-3xl mb-2 block">{group.icon}</span>
-                <h3 className="font-heading font-bold text-lg text-foreground">{group.range}</h3>
-                <p className="text-muted-foreground text-sm mt-1">{group.desc}</p>
+                {group.range}
               </a>
             ))}
           </div>
