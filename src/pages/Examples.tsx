@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import ageGroupsData from "@/data/photos.json";
 
-const PHOTOS_BASE = "/photos";
+/** Pe GitHub Pages site-ul e la /toy-subscription-box/, deci pozele trebuie sub același path */
+const PHOTOS_BASE = `${import.meta.env.BASE_URL}photos`.replace(/\/+/g, "/");
 
 /** Encodare pentru URL – folosim numele exact din JSON (generat din fișierele de pe disc) */
 function toUrlPath(s: string): string {
