@@ -2,51 +2,129 @@
   {
     "folder": "0-3 luni",
     "label": "0–3 luni",
-    "images": [
-      "1_1_0-3_Stativ Montessori cu mobil Munari.jpg",
-      "1_2_0-3_Panou senzorial cu imagini contrastante.jpg",
-      "1_3_0-3_Oglindă din lemn cartonașe contrastante.jpg",
-      "1_4_0-3_Carte pliabilă cu oglindă și imagini contrastante.jpg",
-      "1_5_0-3_Cutiuță muzicală.jpg"
+    "items": [
+      {
+        "file": "1.jpg",
+        "name": "Stativ Montessori cu mobil Munari"
+      },
+      {
+        "file": "2.jpg",
+        "name": "Panou senzorial cu imagini contrastante"
+      },
+      {
+        "file": "3.jpg",
+        "name": "Oglindă din lemn cartonașe contrastante"
+      },
+      {
+        "file": "4.jpg",
+        "name": "Carte pliabilă cu oglindă și imagini contrastante"
+      },
+      {
+        "file": "5.jpg",
+        "name": "Cutiuță muzicală"
+      }
     ]
   },
   {
     "folder": "3-12 luni",
     "label": "3–12 luni",
-    "images": [
-      "2_1_9-12_Baby Gym cu 3 jucării suspendate.jpg",
-      "2_2_9-12_Set mingi senzoriale.jpg",
-      "2_3_9-12_Beaded Raindrops.jpg",
-      "2_4_9-12_Puzzle cu un singur element si oglindă.jpg",
-      "2_5_9-12_Cutia permanenței.jpg",
-      "2_6_9-12_Take Along Activity Box.jpg"
+    "items": [
+      {
+        "file": "1.jpg",
+        "name": "Baby Gym cu 3 jucării suspendate"
+      },
+      {
+        "file": "2.jpg",
+        "name": "Set mingi senzoriale"
+      },
+      {
+        "file": "3.jpg",
+        "name": "Beaded Raindrops"
+      },
+      {
+        "file": "4.jpg",
+        "name": "Puzzle cu un singur element si oglindă"
+      },
+      {
+        "file": "5.jpg",
+        "name": "Cutia permanenței"
+      },
+      {
+        "file": "6.jpg",
+        "name": "Take Along Activity Box"
+      }
     ]
   },
   {
     "folder": "12-24 luni",
     "label": "12–24 luni",
-    "images": [
-      "3_1_12-24_Piramida Pepe si Friends.jpg",
-      "3_2_12-24_Antemergător ”Cărucior cu cuburi”.jpg",
-      "3_3_12-24_Jucărie de tras ”Roll si Rattle Kitten”.jpg",
-      "3_4_12-24_Stacking Music Set.jpg",
-      "3_5_12-24_Labirint 2D ”Pastel Bee si Bear Ball Track”.jpg",
-      "3_6_12-24_Sortator de forme ”Shake si Match”.jpg",
-      "3_7_12-24_Pescuit magnetic 2in1.jpg"
+    "items": [
+      {
+        "file": "1.jpg",
+        "name": "Piramida Pepe si Friends"
+      },
+      {
+        "file": "2.jpg",
+        "name": "Antemergător ”Cărucior cu cuburi”"
+      },
+      {
+        "file": "3.jpg",
+        "name": "Jucărie de tras ”Roll si Rattle Kitten”"
+      },
+      {
+        "file": "4.jpg",
+        "name": "Stacking Music Set"
+      },
+      {
+        "file": "5.jpg",
+        "name": "Labirint 2D ”Pastel Bee si Bear Ball Track”"
+      },
+      {
+        "file": "6.jpg",
+        "name": "Sortator de forme ”Shake si Match”"
+      },
+      {
+        "file": "7.jpg",
+        "name": "Pescuit magnetic 2in1"
+      }
     ]
   },
   {
     "folder": "24-36 luni",
     "label": "24–36 luni",
-    "images": [
-      "4_1_24-36_Curcubeu de stivuit.jpg",
-      "4_2_24-36_Joc de sortare culori.jpg",
-      "4_3_24-36_Sorter avansat ”Creative Peg Puzzle”.jpg",
-      "4_4_24-36_Balance Stacker Animals.jpg",
-      "4_5_24-36_Sorter ”Arca lui Noe”.jpg",
-      "4_6_24-36_Set de feliat ”Picnic”.jpg",
-      "4_7_24-36_Joc de rol ”Tea time”.jpg",
-      "4_8_24-36_Joc imaginativ ”Cargo Delivery Loop”.jpg"
+    "items": [
+      {
+        "file": "1.jpg",
+        "name": "Curcubeu de stivuit"
+      },
+      {
+        "file": "2.jpg",
+        "name": "Joc de sortare culori"
+      },
+      {
+        "file": "3.jpg",
+        "name": "Sorter avansat ”Creative Peg Puzzle”"
+      },
+      {
+        "file": "4.jpg",
+        "name": "Balance Stacker Animals"
+      },
+      {
+        "file": "5.jpg",
+        "name": "Sorter ”Arca lui Noe”"
+      },
+      {
+        "file": "6.jpg",
+        "name": "Set de feliat ”Picnic”"
+      },
+      {
+        "file": "7.jpg",
+        "name": "Joc de rol ”Tea time”"
+      },
+      {
+        "file": "8.jpg",
+        "name": "Joc imaginativ ”Cargo Delivery Loop”"
+      }
     ]
   }
 ]

@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run photos && vite build",
+    "build": "vite build",
     "photos": "node scripts/list-photos.cjs",
+    "photos-rename": "node scripts/rename-photos-to-numbers.cjs",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",

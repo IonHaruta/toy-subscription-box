@@ -4,19 +4,9 @@ import ageGroupsData from "@/data/photos.json";
 /** Pe GitHub Pages site-ul e la /toy-subscription-box/, deci pozele trebuie sub același path */
 const PHOTOS_BASE = `${import.meta.env.BASE_URL}photos`.replace(/\/+/g, "/");
 
-/** Encodare pentru URL – folosim numele exact din JSON (generat din fișierele de pe disc) */
+/** Encodare pentru URL (folder-ul conține spații) */
 function toUrlPath(s: string): string {
   return encodeURIComponent(s);
-}
-
-/** Extrage denumirea jucăriei din numele fișierului (partea după prefixul X_X_vârstă_) */
-function getDisplayName(filename: string): string {
-  const parts = filename.split("_");
-  if (parts.length >= 4) {
-    const nameWithExt = parts.slice(3).join("_");
-    return nameWithExt.replace(/\.(jpg|jpeg|png|webp)$/i, "").trim();
-  }
-  return filename.replace(/\.(jpg|jpeg|png|webp)$/i, "").trim();
 }
 
 const Examples = () => (
@@ -44,7 +34,7 @@ const Examples = () => (
       </motion.div>
 
       <div className="space-y-10 max-w-5xl mx-auto">
-        {(ageGroupsData as { folder: string; label: string; images: string[] }[]).map(
+        {(ageGroupsData as { folder: string; label: string; items: { file: string; name: string }[] }[]).map(
           (group, groupIndex) => (
             <motion.div
               key={group.folder}
@@ -57,24 +47,23 @@ const Examples = () => (
                 className="flex gap-4 overflow-x-auto pb-2 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-thin"
                 style={{ scrollbarWidth: "thin" }}
               >
-                {group.images.map((filename) => {
-                  const src = `${PHOTOS_BASE}/${toUrlPath(group.folder)}/${toUrlPath(filename)}`;
-                  const name = getDisplayName(filename);
+                {group.items.map((item) => {
+                  const src = `${PHOTOS_BASE}/${toUrlPath(group.folder)}/${encodeURIComponent(item.file)}`;
                   return (
                     <div
-                      key={filename}
+                      key={item.file}
                       className="flex-shrink-0 w-[216px] md:w-[240px] bg-card rounded-xl border overflow-hidden"
                     >
                       <div className="aspect-square bg-muted">
                         <img
                           src={src}
-                          alt={name}
+                          alt={item.name}
                           className="w-full h-full object-cover"
                           loading="lazy"
                         />
                       </div>
                       <p className="font-heading font-bold text-foreground text-sm p-3 text-center">
-                        {name}
+                        {item.name}
                       </p>
                     </div>
                   );
