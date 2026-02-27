@@ -34,7 +34,7 @@ const Examples = () => (
       </motion.div>
 
       <div className="space-y-10 max-w-5xl mx-auto">
-        {(ageGroupsData as { folder: string; label: string; items: { file: string; name: string }[] }[]).map(
+        {(ageGroupsData as { folder: string; label: string; title?: string; description?: string; items: { file: string; name: string }[] }[]).map(
           (group, groupIndex) => (
             <motion.div
               key={group.folder}
@@ -42,7 +42,13 @@ const Examples = () => (
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: groupIndex * 0.05 }}
             >
-              <h2 className="text-lg font-heading font-bold text-foreground mb-4">{group.label}</h2>
+              <p className="text-sm font-heading font-bold text-primary mb-1">{group.label}</p>
+              {group.title && (
+                <h2 className="text-xl font-heading font-bold text-foreground mb-2">{group.title}</h2>
+              )}
+              {group.description && (
+                <p className="text-muted-foreground text-sm md:text-base mb-4">{group.description}</p>
+              )}
               <div
                 className="flex gap-4 overflow-x-auto pb-2 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-thin"
                 style={{ scrollbarWidth: "thin" }}

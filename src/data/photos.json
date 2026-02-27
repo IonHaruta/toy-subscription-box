@@ -2,129 +2,59 @@
   {
     "folder": "0-3 luni",
     "label": "0–3 luni",
+    "title": "Observare & urmărire vizuală",
+    "description": "În această etapă, jocul înseamnă privire, contrast și descoperirea treptată a mediului. Jucăriile susțin dezvoltarea atenției vizuale și primele conexiuni senzoriale.",
     "items": [
-      {
-        "file": "1.jpg",
-        "name": "Stativ Montessori cu mobil Munari"
-      },
-      {
-        "file": "2.jpg",
-        "name": "Panou senzorial cu imagini contrastante"
-      },
-      {
-        "file": "3.jpg",
-        "name": "Oglindă din lemn cartonașe contrastante"
-      },
-      {
-        "file": "4.jpg",
-        "name": "Carte pliabilă cu oglindă și imagini contrastante"
-      },
-      {
-        "file": "5.jpg",
-        "name": "Cutiuță muzicală"
-      }
+      { "file": "1.jpg", "name": "Stativ Montessori cu mobil Munari" },
+      { "file": "2.jpg", "name": "Panou senzorial cu imagini contrastante" },
+      { "file": "3.jpg", "name": "Oglindă din lemn cartonașe contrastante" },
+      { "file": "4.jpg", "name": "Carte pliabilă cu oglindă și imagini contrastante" },
+      { "file": "5.jpg", "name": "Cutiuță muzicală" }
     ]
   },
   {
     "folder": "3-12 luni",
     "label": "3–12 luni",
+    "title": "Explorare senzorială activă",
+    "description": "Copilul începe să apuce, să scuture, să rotească și să experimenteze activ cu materialele. Jocul devine mișcare, sunet și descoperire prin atingere.",
     "items": [
-      {
-        "file": "1.jpg",
-        "name": "Baby Gym cu 3 jucării suspendate"
-      },
-      {
-        "file": "2.jpg",
-        "name": "Set mingi senzoriale"
-      },
-      {
-        "file": "3.jpg",
-        "name": "Beaded Raindrops"
-      },
-      {
-        "file": "4.jpg",
-        "name": "Puzzle cu un singur element si oglindă"
-      },
-      {
-        "file": "5.jpg",
-        "name": "Cutia permanenței"
-      },
-      {
-        "file": "6.jpg",
-        "name": "Take Along Activity Box"
-      }
+      { "file": "1.jpg", "name": "Baby Gym cu 3 jucării suspendate" },
+      { "file": "2.jpg", "name": "Set mingi senzoriale" },
+      { "file": "3.jpg", "name": "Beaded Raindrops" },
+      { "file": "4.jpg", "name": "Puzzle cu un singur element si oglindă" },
+      { "file": "5.jpg", "name": "Cutia permanenței" },
+      { "file": "6.jpg", "name": "Take Along Activity Box" }
     ]
   },
   {
     "folder": "12-24 luni",
     "label": "12–24 luni",
+    "title": "Mișcare, potrivire & logică timpurie",
+    "description": "Aceasta este etapa în care copilul caută relații între obiecte, experimentează potrivirea și începe să înțeleagă legătura cauză–efect. Jocul susține coordonarea, organizarea și primele structuri logice.",
     "items": [
-      {
-        "file": "1.jpg",
-        "name": "Piramida Pepe si Friends"
-      },
-      {
-        "file": "2.jpg",
-        "name": "Antemergător ”Cărucior cu cuburi”"
-      },
-      {
-        "file": "3.jpg",
-        "name": "Jucărie de tras ”Roll si Rattle Kitten”"
-      },
-      {
-        "file": "4.jpg",
-        "name": "Stacking Music Set"
-      },
-      {
-        "file": "5.jpg",
-        "name": "Labirint 2D ”Pastel Bee si Bear Ball Track”"
-      },
-      {
-        "file": "6.jpg",
-        "name": "Sortator de forme ”Shake si Match”"
-      },
-      {
-        "file": "7.jpg",
-        "name": "Pescuit magnetic 2in1"
-      }
+      { "file": "1.jpg", "name": "Piramida Pepe si Friends" },
+      { "file": "2.jpg", "name": "Antemergător \"Cărucior cu cuburi\"" },
+      { "file": "3.jpg", "name": "Jucărie de tras \"Roll si Rattle Kitten\"" },
+      { "file": "4.jpg", "name": "Stacking Music Set" },
+      { "file": "5.jpg", "name": "Labirint 2D \"Pastel Bee si Bear Ball Track\"" },
+      { "file": "6.jpg", "name": "Sortator de forme \"Shake si Match\"" },
+      { "file": "7.jpg", "name": "Pescuit magnetic 2in1" }
     ]
   },
   {
     "folder": "24-36 luni",
     "label": "24–36 luni",
+    "title": "Problem solving, joc simbolic & autonomie",
+    "description": "Copilul începe să creeze scenarii, să imite lumea adulților și să rezolve sarcini mai complexe. Jocul devine structură, poveste și exercițiu al independenței.",
     "items": [
-      {
-        "file": "1.jpg",
-        "name": "Curcubeu de stivuit"
-      },
-      {
-        "file": "2.jpg",
-        "name": "Joc de sortare culori"
-      },
-      {
-        "file": "3.jpg",
-        "name": "Sorter avansat ”Creative Peg Puzzle”"
-      },
-      {
-        "file": "4.jpg",
-        "name": "Balance Stacker Animals"
-      },
-      {
-        "file": "5.jpg",
-        "name": "Sorter ”Arca lui Noe”"
-      },
-      {
-        "file": "6.jpg",
-        "name": "Set de feliat ”Picnic”"
-      },
-      {
-        "file": "7.jpg",
-        "name": "Joc de rol ”Tea time”"
-      },
-      {
-        "file": "8.jpg",
-        "name": "Joc imaginativ ”Cargo Delivery Loop”"
-      }
+      { "file": "1.jpg", "name": "Curcubeu de stivuit" },
+      { "file": "2.jpg", "name": "Joc de sortare culori" },
+      { "file": "3.jpg", "name": "Sorter avansat \"Creative Peg Puzzle\"" },
+      { "file": "4.jpg", "name": "Balance Stacker Animals" },
+      { "file": "5.jpg", "name": "Sorter \"Arca lui Noe\"" },
+      { "file": "6.jpg", "name": "Set de feliat \"Picnic\"" },
+      { "file": "7.jpg", "name": "Joc de rol \"Tea time\"" },
+      { "file": "8.jpg", "name": "Joc imaginativ \"Cargo Delivery Loop\"" }
     ]
   }
 ]

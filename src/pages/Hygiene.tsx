@@ -9,7 +9,7 @@ const Hygiene = () => (
             Igienizare și siguranță
           </h1>
           <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-            Fiecare jucărie este verificată, curată și igienizată între utilizări, metode adecvate vârstei copiilor și materialelor din care sunt realizate.
+            Fiecare jucărie este verificată, curată și igienizată între utilizări, prin metode adecvate vârstei copiilor și materialelor din care sunt realizate.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
             <em>Siguranța și starea jucăriilor sunt o prioritate în fiecare rotație.</em>

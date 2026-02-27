@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-baby.jpg";
+import heroImage from "@/assets/baby.jpeg";
 import Reviews from "./Reviews";
 
 const steps = [
