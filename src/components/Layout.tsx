@@ -101,7 +101,7 @@ const Footer = () => (
           <p className="text-muted-foreground text-sm">Administrator: Rotaru-Cojocari Diana</p>
         </div>
         <div>
-          <h4 className="font-heading font-bold mb-4 text-foreground italic">Navigare</h4>
+          <h4 className="font-heading font-bold mb-4 text-foreground">Navigare</h4>
           <div className="flex flex-col gap-2">
             {navLinksFooter.map((link) => (
               <Link key={link.to} to={link.to} className="text-muted-foreground text-sm hover:text-primary transition-colors">
